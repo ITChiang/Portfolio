@@ -18,10 +18,14 @@ class App extends Component {
 
   }
   componentDidMount() {
-    ReactGA.initialize("UA-129752002-1")
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
+  /**
+   * 
+   * React router for nav to each page
+   * 
+   */
 
   render() {
     return (

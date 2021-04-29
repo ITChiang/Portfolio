@@ -5,7 +5,12 @@ import ReactMarkdown from 'react-markdown'
 import { Fade, Grow } from '@material-ui/core';
 import gameList from './projects/game.content'
 import "./projects.css";
-
+  /**
+   * 
+   * Same structure as project page
+   * For styling and display each game project 
+   * 
+   */
 
 
 const ProjectElement = (props) => {

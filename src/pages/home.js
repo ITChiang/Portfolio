@@ -6,6 +6,8 @@ import './home.css';
 import Background from "../components/Background";
 import cover from"../assets/water_cover.jpg";
 
+// unused home page
+
 const introText =`I am I-Tung Chiang, a designer, programmer, and traveler born and raised in Taiwan, keep finding and chasing the beautiful stuff in this world. And dream one day could build something that can solve people's problem in a smoothly way.
 
 Recently, I finished my bachelor degree in Computer Science at Yuan Ze University and Linköping University in Sweden, where I have learned all the ability that a good programmer needed. Before I came to Carnegie Mellon University, I was working as a web developer at Music and Audio Computing Lab, Academia Sinica.

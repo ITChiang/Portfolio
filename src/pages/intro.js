@@ -38,15 +38,22 @@ class Intro extends Component {
 
   }
   componentDidMount() {
-    ReactGA.initialize('G-13NGJH91V8');
+
+    // setting GA
     ReactGA.set({page:window.location.pathname});
     ReactGA.pageview(window.location.pathname);
   }
 
+/**
+ * 
+ *    <Background />  use this element to display the Three.js scene
+ * 
+ */
+
   render() {
     return (
       <div className="App">
-        <Background />
+        <Background /> 
         <Bio/>
         <Slide  direction="left"  in={true} timeout={1200}>
         <div className="half_area"></div>

@@ -21,7 +21,7 @@ class project extends Component {
 
 
     if (this.props.location.data !== undefined)
-      import(`./projects/${this.props.location.data.file_name}/README.md`).then(res => this.setState({ content: res.default }));
+      import(`./projects/${this.props.location.data.file_name}/README.md`).then(res => this.setState({ content: res.default })); // set and get the URL of each project
       else{
         const file = this.props.location.pathname.split('/');
         console.log("trigger!",this.props.location.data);
@@ -30,6 +30,11 @@ class project extends Component {
    
   
   }
+  /**
+   * 
+   * Use ReactMarkdown to display each project.
+   * Need to check the status of the file before use it.
+   */
 
   render() {
     return (

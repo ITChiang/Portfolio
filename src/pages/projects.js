@@ -6,7 +6,10 @@ import { Fade, Grow } from '@material-ui/core';
 import projectList from './projects/project.content'
 import "./projects.css";
 
-
+/**
+ *  Set the URL in the projects folder and create folder for each project. 
+ *  Folder name should be all lowercase.
+ */
 
 const ProjectElement = (props) => {
   const history = useHistory();

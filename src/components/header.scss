@@ -62,7 +62,7 @@ $header-text-color:black;
 }
 .links_inactive{
     position: absolute;
-    left: 80vw;
+    right: 3vw;
     font-size: 1.6rem;
     margin-top: 1vh;
     display: flex;
@@ -70,7 +70,7 @@ $header-text-color:black;
 }
 .links_active{
     position: absolute;
-    left: 80vw;
+    right: 3vw;
     font-size: 1.6rem;
     margin-top: 1vh;
     display: flex;

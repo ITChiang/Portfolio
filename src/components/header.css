@@ -67,7 +67,7 @@
 
 .links_inactive {
   position: absolute;
-  left: 80vw;
+  right: 3vw;
   font-size: 1.6rem;
   margin-top: 1vh;
   display: -webkit-box;
@@ -81,7 +81,7 @@
 
 .links_active {
   position: absolute;
-  left: 80vw;
+  right: 3vw;
   font-size: 1.6rem;
   margin-top: 1vh;
   display: -webkit-box;

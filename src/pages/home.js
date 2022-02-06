@@ -4,7 +4,7 @@ import { HashRouter as Router, Route, Redirect, Switch } from "react-router-dom"
 import { Fade, Grow,Slide  } from '@material-ui/core';
 import './home.css';
 import Background from "../components/Background";
-import cover from"../assets/water_cover.jpg";
+
 
 // unused home page
 

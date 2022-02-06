@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Redirect, Switch, withRouter } from "react
 import projectList from './projects/project.content'
 import { Fade, Grow } from '@material-ui/core';
 import ReactMarkdown from 'react-markdown';
+import ReactGA from 'react-ga';
 import './project.css';
 
 
@@ -18,6 +19,7 @@ class project extends Component {
 
   }
   componentDidMount() {
+    ReactGA.pageview('/project');
 
 
     if (this.props.location.data !== undefined)

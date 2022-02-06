@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef } from "react";
+import React, { Component } from "react";
 import { hot } from "react-hot-loader";
 import { HashRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import "./App.css";
@@ -8,7 +8,8 @@ import Project from './pages/project';
 import Game from './pages/game';
 import Intro from './pages/intro';
 import Header from './components/header';
-import ReactGA from 'react-ga';
+import {initGA,pageView} from './components/tracking';
+
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +19,8 @@ class App extends Component {
 
   }
   componentDidMount() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    initGA('UA-219549079-1');
+    pageView();
   }
 
   /**

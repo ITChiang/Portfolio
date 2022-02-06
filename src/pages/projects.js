@@ -1,15 +1,18 @@
-import React, { Component, useState, useRef } from "react";
+import React, { Component, useState, useRef,useEffect } from "react";
 import { hot } from "react-hot-loader";
 import { HashRouter as Router, Route, Redirect, Switch, useHistory } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
 import { Fade, Grow } from '@material-ui/core';
 import projectList from './projects/project.content'
+import {initGA,pageView} from '../components/tracking'
 import "./projects.css";
 
 /**
  *  Set the URL in the projects folder and create folder for each project. 
  *  Folder name should be all lowercase.
  */
+
+
 
 const ProjectElement = (props) => {
   const history = useHistory();
@@ -19,8 +22,12 @@ const ProjectElement = (props) => {
       pathname: `/project/${fileName}`,
       data: { file_name: fileName },
     })
-    console.log('history push!!!');
   }
+
+  useEffect(()=>{
+    initGA('UA-219549079-1');
+    pageView();
+  },[])
 
   return (
     <div className="projectListElement">
